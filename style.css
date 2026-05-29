@@ -1,0 +1,207 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f9fc;
+color:#222;
+line-height:1.6;
+}
+
+header{
+background:#0a2342;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo h2{
+font-size:24px;
+}
+
+.logo p{
+font-size:13px;
+opacity:.8;
+}
+
+nav{
+display:flex;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff6b00;
+}
+
+.hero{
+background:linear-gradient(rgba(10,35,66,.9),rgba(10,35,66,.9));
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+background:#ff6b00;
+color:white;
+padding:12px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.notice{
+background:#ff6b00;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.about,
+.courses,
+.contact{
+padding:70px 8%;
+}
+
+.about h2,
+.courses h2,
+.contact h2{
+margin-bottom:20px;
+color:#0a2342;
+font-size:32px;
+}
+
+.stats{
+padding:40px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.card h3{
+font-size:32px;
+color:#ff6b00;
+}
+
+.course-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.course{
+background:white;
+padding:20px;
+border-radius:12px;
+text-align:center;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.course:hover{
+transform:translateY(-5px);
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+max-width:600px;
+}
+
+.contact input,
+.contact textarea{
+padding:14px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.contact button{
+background:#ff6b00;
+color:white;
+border:none;
+padding:14px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.whatsapp,
+.call{
+position:fixed;
+right:20px;
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:24px;
+border-radius:50%;
+color:white;
+z-index:999;
+}
+
+.whatsapp{
+bottom:20px;
+background:#25D366;
+}
+
+.call{
+bottom:90px;
+background:#0a2342;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
