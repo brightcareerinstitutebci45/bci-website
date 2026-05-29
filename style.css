@@ -24,8 +24,23 @@ top:0;
 z-index:1000;
 }
 
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+object-fit:contain;
+border-radius:50%;
+background:white;
+padding:3px;
+}
+
 .logo h2{
-font-size:24px;
+font-size:22px;
 }
 
 .logo p{
@@ -50,10 +65,14 @@ color:#ff6b00;
 }
 
 .hero{
-background:linear-gradient(rgba(10,35,66,.9),rgba(10,35,66,.9));
+background:
+linear-gradient(rgba(10,35,66,.88),rgba(10,35,66,.88)),
+url("https://images.unsplash.com/photo-1523240795612-9a054b0db644");
+background-size:cover;
+background-position:center;
 color:white;
 text-align:center;
-padding:100px 20px;
+padding:140px 20px;
 }
 
 .hero h1{
