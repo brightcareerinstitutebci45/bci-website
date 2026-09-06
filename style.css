@@ -209,19 +209,19 @@ background:#0a2342;
 
 @media(max-width:768px){
 
-header{
-flex-direction:column;
-gap:15px;
-}
+    header{
+        flex-direction:row;
+        gap:15px;
+    }
 
-nav{
-flex-wrap:wrap;
-justify-content:center;
-}
+    .hero h1{
+        font-size:32px;
+    }
 
-.hero h1{
-font-size:32px;
-}
+    .whatsapp,
+    .call{
+        right:15px;
+    }
 
 }
 /* ================================
