@@ -86,5 +86,36 @@ Thank you.`;
         window.open(whatsappURL, "_blank");
 
     });
+/* ================================
+   MOBILE NAVIGATION
+================================ */
 
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && mainNav) {
+
+    menuToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+
+        if (mainNav.classList.contains("active")) {
+            menuToggle.innerHTML = "✕";
+            menuToggle.setAttribute("aria-label", "Close Menu");
+        } else {
+            menuToggle.innerHTML = "☰";
+            menuToggle.setAttribute("aria-label", "Open Menu");
+        }
+    });
+
+    // Close menu after clicking a navigation link
+    const navLinks = mainNav.querySelectorAll("a");
+
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            mainNav.classList.remove("active");
+            menuToggle.innerHTML = "☰";
+            menuToggle.setAttribute("aria-label", "Open Menu");
+        });
+    });
+}
 });
