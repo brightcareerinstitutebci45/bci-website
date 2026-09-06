@@ -119,3 +119,42 @@ if (menuToggle && mainNav) {
     });
 }
 });
+/* =================================
+   COURSE WHATSAPP ENQUIRY
+================================= */
+
+const courseButtons = document.querySelectorAll(".course-btn");
+
+courseButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const selectedCourse = button.getAttribute("data-course");
+
+        const message =
+`🎓 *BRIGHT CAREER INSTITUTE*
+
+📚 *COURSE ENQUIRY*
+
+━━━━━━━━━━━━━━━━━━
+
+I am interested in:
+
+🎯 *${selectedCourse}*
+
+Please share the course details, batch timings, fees and admission information.
+
+━━━━━━━━━━━━━━━━━━
+
+Thank you.`;
+
+        const encodedMessage = encodeURIComponent(message);
+
+        const whatsappURL =
+            `https://wa.me/918192080081?text=${encodedMessage}`;
+
+        window.open(whatsappURL, "_blank");
+
+    });
+
+});
